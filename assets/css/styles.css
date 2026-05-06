@@ -98,6 +98,7 @@ img {
     font-style: italic;
     line-height: 1.08;
     letter-spacing: 0;
+    text-transform: uppercase;
 }
 
 .forum-header h1 span {
@@ -222,7 +223,7 @@ img {
 
 .collage-card {
     position: relative;
-    min-height: 350px;
+    min-height: 390px;
     padding: 18px;
 }
 
@@ -242,7 +243,7 @@ img {
 
 .collage-stage {
     position: relative;
-    min-height: 310px;
+    min-height: 350px;
 }
 
 .collage-img {
@@ -255,26 +256,50 @@ img {
 
 .collage-img-one {
     top: 18px;
-    left: 46px;
-    width: 58%;
-    height: 166px;
-    z-index: 2;
-}
-
-.collage-img-two {
-    top: 92px;
-    right: 4px;
-    width: 42%;
-    height: 148px;
+    left: 48px;
+    width: 43%;
+    height: 150px;
     z-index: 3;
 }
 
-.collage-img-three {
-    left: 10px;
-    bottom: 8px;
-    width: 52%;
+.collage-img-two {
+    top: 42px;
+    right: 14px;
+    width: 38%;
     height: 135px;
+    z-index: 4;
+}
+
+.collage-img-three {
+    left: 18px;
+    bottom: 44px;
+    width: 38%;
+    height: 138px;
+    z-index: 2;
+}
+
+.collage-img-four {
+    right: 36px;
+    bottom: 58px;
+    width: 34%;
+    height: 134px;
+    z-index: 5;
+}
+
+.collage-img-five {
+    left: 92px;
+    bottom: 6px;
+    width: 34%;
+    height: 112px;
     z-index: 1;
+}
+
+.collage-img-six {
+    top: 156px;
+    left: 36%;
+    width: 31%;
+    height: 118px;
+    z-index: 6;
 }
 
 .mini-label {

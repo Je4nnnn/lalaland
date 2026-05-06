@@ -21,7 +21,13 @@ lalaland/
       |- news5.png
       |- news6.png
       |- news7.png
-      `- news8.png
+      |- news8.png
+      |- C1.png
+      |- C2.png
+      |- C3.png
+      |- C4.png
+      |- C5.png
+      `- C6.png
 ```
 
 ## Contenido del sitio
@@ -87,6 +93,7 @@ Las imagenes actuales se mantienen en `assets/img/` con la nomenclatura disponib
 - `news6.png`
 - `news7.png`
 - `news8.png`
+- `C1.png` a `C6.png` para el collage superior
 
 Cada entrada usa su imagen correspondiente: `news1.png` para el primer look, `news2.png` para el segundo y asi sucesivamente hasta `news8.png`.
 
