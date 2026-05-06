@@ -14,9 +14,14 @@ lalaland/
    |  `- styles.css
    `- img/
       |- featured.png
-      |- news1.jfif
-      |- news2.jfif
-      `- news4.jfif
+      |- news1.png
+      |- news2.png
+      |- news3.png
+      |- news4.png
+      |- news5.png
+      |- news6.png
+      |- news7.png
+      `- news8.png
 ```
 
 ## Contenido del sitio
@@ -74,11 +79,16 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 Las imagenes actuales se mantienen en `assets/img/` con la nomenclatura disponible:
 
 - `featured.png`
-- `news1.jfif`
-- `news2.jfif`
-- `news4.jfif`
+- `news1.png`
+- `news2.png`
+- `news3.png`
+- `news4.png`
+- `news5.png`
+- `news6.png`
+- `news7.png`
+- `news8.png`
 
-Como todavia no estan las 8 fotos definitivas, algunas imagenes se reutilizan temporalmente en varias entradas. Cuando se agreguen las fotos finales, se pueden reemplazar manteniendo las mismas rutas usadas en `index.html` o cambiando solo el valor de `src` en cada entrada.
+Cada entrada usa su imagen correspondiente: `news1.png` para el primer look, `news2.png` para el segundo y asi sucesivamente hasta `news8.png`.
 
 ## Como verlo localmente
 
