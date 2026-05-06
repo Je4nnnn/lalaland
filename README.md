@@ -27,6 +27,8 @@ La pagina presenta:
 - Un encabezado con el tema del foro y el titulo principal.
 - Una franja superior con 4 imagenes fijas, reemplazando la idea inicial de una ruleta.
 - Una publicacion fijada que introduce el tema con tono de foro.
+- Un bloque visual tipo collage con imagenes superpuestas y tarjetas de conversacion.
+- Una frase destacada en un cuadro azul para separar la introduccion de las entradas principales.
 - Ocho entradas principales, cada una con foto, fuente pequena bajo la imagen y descripcion en un cuadro lateral.
 - Informacion sobre 8 momentos de moda de Taehyung en 2025: alta costura, craftcore, nostalgia vintage, cuero, tejido arquitectonico, lujo discreto y estilo retro.
 
@@ -49,6 +51,8 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 - `.top-thread`: contexto para la etiqueta `4 imagenes fijas`.
 - `.fixed-image`: contexto para las etiquetas de cada imagen superior.
 - `.thread-intro`: contexto para la etiqueta `Publicacion fijada`.
+- `.collage-card` y `.collage-stage`: contexto para el bloque de imagenes superpuestas.
+- `.quote-thread`: contexto para la etiqueta `frase`.
 - `.look-media`: contexto para la etiqueta `imagen`.
 - `.look-text`: contexto para el numero de cada entrada.
 
@@ -57,6 +61,10 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 - `.roulette-note`: etiqueta ubicada sobre la franja de cuatro imagenes.
 - `.fixed-image span`: etiquetas sobre cada imagen fija.
 - `.intro-label`: etiqueta ubicada sobre la publicacion fijada.
+- `.vertical-note`: rotulo lateral del collage.
+- `.collage-img-one`, `.collage-img-two`, `.collage-img-three`: imagenes superpuestas dentro del collage.
+- `.mini-label-one` y `.mini-label-two`: etiquetas pequenas dentro del collage.
+- `.quote-thread::after`: etiqueta del cuadro azul de frase.
 - `.look-media::before`: etiqueta ubicada sobre cada foto.
 - `.look-number`: numero ubicado dentro del cuadro de texto de cada entrada.
 
