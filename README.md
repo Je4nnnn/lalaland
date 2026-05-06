@@ -29,7 +29,7 @@ La pagina presenta:
 - Un bloque visual tipo collage con imagenes superpuestas y tarjetas de conversacion.
 - Una frase destacada en un cuadro azul para separar la introduccion de las entradas principales.
 - Ocho entradas principales, cada una con foto, fuente pequena bajo la imagen y descripcion en un cuadro lateral.
-- Enlaces finales a Vogue, Instagram de Taehyung, Instagram de BTS, X de BTS, YouTube y sitio oficial de BigHit.
+- Enlaces finales con usuarios de redes: `@thv`, `@bts.bighitofficial`, `@BTS_twt`, `@BTS`, `@voguemagazine` y `@bighit_music`.
 - Informacion sobre 8 momentos de moda de Taehyung en 2025: alta costura, craftcore, nostalgia vintage, cuero, tejido arquitectonico, lujo discreto y estilo retro.
 
 ## Tecnologias usadas
