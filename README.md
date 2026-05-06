@@ -26,8 +26,8 @@ La pagina presenta:
 
 - Un encabezado con el tema del foro y el titulo principal.
 - Una franja superior con 4 imagenes fijas, reemplazando la idea inicial de una ruleta.
-- Un bloque central con collage de imagenes y textos tipo publicacion/respuesta.
-- Una frase destacada y una seccion inferior con tres columnas.
+- Una publicacion fijada que introduce el tema con tono de foro.
+- Ocho entradas principales, cada una con foto, fuente pequena bajo la imagen y descripcion en un cuadro lateral.
 - Informacion sobre 8 momentos de moda de Taehyung en 2025: alta costura, craftcore, nostalgia vintage, cuero, tejido arquitectonico, lujo discreto y estilo retro.
 
 ## Tecnologias usadas
@@ -48,31 +48,28 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 - `.forum-header`: bloque principal del titulo del foro.
 - `.top-thread`: contexto para la etiqueta `4 imagenes fijas`.
 - `.fixed-image`: contexto para las etiquetas de cada imagen superior.
-- `.collage-panel` y `.collage-stage`: contexto para el collage central.
-- `.quote-thread`: contexto para la etiqueta `frase`.
-- `.feature-photo`: contexto para la etiqueta sobre la imagen inferior.
+- `.thread-intro`: contexto para la etiqueta `Publicacion fijada`.
+- `.look-media`: contexto para la etiqueta `imagen`.
+- `.look-text`: contexto para el numero de cada entrada.
 
 ### Absolute
 
 - `.roulette-note`: etiqueta ubicada sobre la franja de cuatro imagenes.
 - `.fixed-image span`: etiquetas sobre cada imagen fija.
-- `.side-label`: rotulo lateral del bloque de collage.
-- `.collage-img-one`, `.collage-img-two`, `.collage-img-three`: imagenes superpuestas del collage.
-- `.mini-card-one` y `.mini-card-two`: etiquetas pequenas dentro del collage.
-- `.quote-thread::after`: etiqueta de frase destacada.
-- `.photo-pin`: etiqueta ubicada sobre la imagen inferior.
+- `.intro-label`: etiqueta ubicada sobre la publicacion fijada.
+- `.look-media::before`: etiqueta ubicada sobre cada foto.
+- `.look-number`: numero ubicado dentro del cuadro de texto de cada entrada.
 
 ## Imagenes
 
-Las imagenes actuales se mantienen en `assets/img/` con la misma nomenclatura:
+Las imagenes actuales se mantienen en `assets/img/` con la nomenclatura disponible:
 
-- `featured.jpg`
-- `news1.jpg`
-- `news2.jpg`
-- `news3.jpg`
-- `news4.jpg`
+- `featured.png`
+- `news1.jfif`
+- `news2.jfif`
+- `news4.jfif`
 
-Cuando se reemplacen las imagenes definitivas, conviene conservar los mismos nombres para que el HTML no necesite cambios.
+Como todavia no estan las 8 fotos definitivas, algunas imagenes se reutilizan temporalmente en varias entradas. Cuando se agreguen las fotos finales, se pueden reemplazar manteniendo las mismas rutas usadas en `index.html` o cambiando solo el valor de `src` en cada entrada.
 
 ## Como verlo localmente
 

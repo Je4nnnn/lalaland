@@ -3,16 +3,17 @@
    ===================================================== */
 
 :root {
-    --ink: #1f2733;
-    --muted: #687281;
-    --paper: #f6f1e8;
-    --panel: #fffaf1;
-    --line: #253040;
-    --accent: #a83238;
-    --accent-soft: #f0c8bd;
-    --blue: #263f68;
-    --green: #4f6f52;
-    --shadow: 8px 8px 0 rgba(31, 39, 51, 0.16);
+    --ink: #242936;
+    --muted: #666b78;
+    --paper: #f7f1e6;
+    --panel: #fffaf2;
+    --line: #232a38;
+    --accent: #a9343f;
+    --accent-soft: #f4d8ce;
+    --blue: #243e66;
+    --green: #506d52;
+    --cream: #fffdf8;
+    --shadow: 7px 7px 0 rgba(35, 42, 56, 0.16);
 }
 
 * {
@@ -28,11 +29,11 @@ html {
 body {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 16px;
-    line-height: 1.55;
+    line-height: 1.6;
     color: var(--ink);
     background:
-        linear-gradient(rgba(31, 39, 51, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(31, 39, 51, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(35, 42, 56, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(35, 42, 56, 0.045) 1px, transparent 1px),
         var(--paper);
     background-size: 26px 26px;
 }
@@ -56,36 +57,52 @@ img {
     position: relative;
     border: 3px solid var(--line);
     background: var(--panel);
-    padding: 24px 28px 28px;
+    padding: 30px 34px 34px;
     margin-bottom: 18px;
     box-shadow: var(--shadow);
+}
+
+.topic-tag,
+.roulette-note,
+.intro-label,
+.look-number,
+.footer-link,
+.fixed-image span {
+    font-family: "Courier New", Courier, monospace;
 }
 
 .topic-tag {
     display: inline-block;
     background: var(--blue);
     color: #ffffff;
-    padding: 5px 12px;
-    margin-bottom: 12px;
-    font: 700 0.78rem Arial, sans-serif;
-    letter-spacing: 0.04em;
+    padding: 6px 13px;
+    margin-bottom: 18px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
 .forum-header h1 {
-    max-width: 850px;
-    margin: 0 auto 12px;
+    max-width: 900px;
+    margin: 0 auto 18px;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 4.4rem);
-    line-height: 0.95;
-    text-transform: uppercase;
+    text-wrap: balance;
+    font-size: clamp(2.15rem, 4.5vw, 4.15rem);
+    line-height: 1.04;
+    letter-spacing: 0;
+}
+
+.forum-header h1 span {
+    display: block;
 }
 
 .forum-summary {
-    max-width: 760px;
+    max-width: 780px;
     margin: 0 auto;
     text-align: center;
     color: var(--muted);
+    font-size: 1.03rem;
 }
 
 /* =====================================================
@@ -94,25 +111,26 @@ img {
 
 .forum-board {
     border: 3px solid var(--line);
-    background: rgba(255, 250, 241, 0.82);
+    background: rgba(255, 250, 242, 0.9);
     padding: 18px;
 }
 
 .top-thread {
     position: relative;
     border-bottom: 3px solid var(--line);
-    padding: 18px 14px 24px;
+    padding: 22px 14px 26px;
     margin-bottom: 24px;
 }
 
 .roulette-note {
     position: absolute;
-    top: -15px;
+    top: -16px;
     right: 18px;
     background: var(--accent);
     color: #ffffff;
     padding: 6px 12px;
-    font: 700 0.78rem Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
 }
 
 .image-strip {
@@ -126,212 +144,156 @@ img {
     border: 3px solid var(--line);
     background: #ffffff;
     padding: 7px;
-    min-height: 180px;
+    min-height: 176px;
 }
 
 .fixed-image img {
-    height: 156px;
+    height: 152px;
     object-fit: cover;
-    filter: saturate(0.9);
+    filter: saturate(0.92) contrast(1.02);
 }
 
-.fixed-image span,
-.photo-pin {
+.fixed-image span {
     position: absolute;
     left: 10px;
     bottom: 10px;
     background: #ffffff;
     border: 2px solid var(--line);
     padding: 3px 8px;
-    font: 700 0.72rem Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-/* =====================================================
-   BLOQUE CENTRAL
-   ===================================================== */
-
-.discussion-block {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr;
-    gap: 20px;
-    align-items: stretch;
-    margin-bottom: 22px;
-}
-
-.collage-panel,
-.post-card,
-.forum-column,
-.feature-photo {
-    border: 3px solid var(--line);
-    background: #fffdf8;
-}
-
-.collage-panel {
-    position: relative;
-    padding: 18px;
-    min-height: 340px;
-}
-
-.side-label {
-    position: absolute;
-    left: -42px;
-    top: 96px;
-    width: 130px;
-    transform: rotate(-90deg);
-    color: var(--accent);
-    font: 700 0.72rem Arial, sans-serif;
-    text-transform: uppercase;
-}
-
-.collage-stage {
-    position: relative;
-    min-height: 300px;
-}
-
-.collage-img {
-    position: absolute;
-    border: 3px solid var(--line);
-    background: #ffffff;
-    padding: 5px;
-    object-fit: cover;
-}
-
-.collage-img-one {
-    top: 18px;
-    left: 42px;
-    width: 58%;
-    height: 165px;
-    z-index: 2;
-}
-
-.collage-img-two {
-    top: 88px;
-    right: 6px;
-    width: 42%;
-    height: 152px;
-    z-index: 3;
-}
-
-.collage-img-three {
-    left: 8px;
-    bottom: 12px;
-    width: 52%;
-    height: 132px;
-    z-index: 1;
-}
-
-.mini-card {
-    position: absolute;
-    z-index: 4;
-    background: var(--accent-soft);
-    border: 3px solid var(--line);
-    padding: 10px 14px;
-    font: 800 0.86rem Arial, sans-serif;
-}
-
-.mini-card-one {
-    left: 12px;
-    top: 20px;
-}
-
-.mini-card-two {
-    right: 22px;
-    bottom: 16px;
-}
-
-.post-card {
-    padding: 22px;
-}
-
-.post-meta {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 12px;
-    color: var(--muted);
-    font: 700 0.78rem Arial, sans-serif;
-    text-transform: uppercase;
-}
-
-.author-name {
-    color: var(--accent);
-}
-
-.post-card h2,
-.forum-column h2 {
-    margin-bottom: 12px;
-    font-size: 1.45rem;
-    line-height: 1.15;
-    color: var(--blue);
-}
-
-.post-card p + p,
-.forum-column p + p {
-    margin-top: 12px;
-}
-
-.main-post {
-    background: #ffffff;
-}
-
-.response-post {
-    background: #f8eadf;
-}
-
-.quote-thread {
+.thread-intro {
     position: relative;
     border: 3px solid var(--line);
     background: var(--blue);
     color: #ffffff;
-    padding: 18px 56px 18px 24px;
-    margin-bottom: 22px;
+    padding: 22px 28px;
+    margin-bottom: 24px;
 }
 
-.quote-thread::after {
-    content: "frase";
+.intro-label {
     position: absolute;
-    right: 16px;
-    bottom: -15px;
+    top: -14px;
+    left: 22px;
     background: #ffffff;
     color: var(--line);
-    border: 3px solid var(--line);
-    padding: 3px 9px;
-    font: 700 0.72rem Arial, sans-serif;
+    border: 2px solid var(--line);
+    padding: 4px 9px;
+    font-size: 0.72rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-.quote-thread p {
-    font-size: 1.35rem;
-    line-height: 1.35;
+.thread-intro p {
+    max-width: 88ch;
+    font-size: 1.08rem;
 }
 
 /* =====================================================
-   BLOQUE INFERIOR
+   OCHO PUBLICACIONES
    ===================================================== */
 
-.bottom-thread {
+.look-list {
     display: grid;
-    grid-template-columns: 1fr 1.15fr 1fr;
-    gap: 20px;
+    gap: 26px;
+}
+
+.look-post {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.35fr);
+    gap: 24px;
     align-items: stretch;
+    border-bottom: 3px solid var(--line);
+    padding-bottom: 26px;
 }
 
-.forum-column {
-    padding: 20px;
-    background: #fffdf8;
+.look-post:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
-.feature-photo {
+.look-post-reverse {
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+}
+
+.look-post-reverse .look-media {
+    grid-column: 2;
+}
+
+.look-post-reverse .look-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.look-media,
+.look-text {
+    border: 3px solid var(--line);
+    background: var(--cream);
+}
+
+.look-media {
     position: relative;
     padding: 10px;
-    background: #ffffff;
 }
 
-.feature-photo img {
+.look-media::before {
+    content: "imagen";
+    position: absolute;
+    left: 18px;
+    top: -14px;
+    background: var(--accent-soft);
+    border: 2px solid var(--line);
+    padding: 4px 9px;
+    font: 700 0.72rem "Courier New", Courier, monospace;
+    text-transform: uppercase;
+}
+
+.look-media img {
+    aspect-ratio: 4 / 5;
     height: 100%;
-    min-height: 310px;
+    max-height: 460px;
     object-fit: cover;
+}
+
+.look-media figcaption {
+    margin-top: 9px;
+    color: var(--muted);
+    font: 0.78rem Arial, sans-serif;
+    line-height: 1.35;
+}
+
+.look-text {
+    position: relative;
+    padding: 28px 32px 30px;
+}
+
+.look-number {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: var(--blue);
+    color: #ffffff;
+    border: 2px solid var(--line);
+    padding: 5px 9px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.look-text h2 {
+    max-width: 92%;
+    margin-bottom: 16px;
+    color: var(--blue);
+    font-size: clamp(1.35rem, 2.4vw, 2rem);
+    line-height: 1.18;
+    letter-spacing: 0;
+}
+
+.look-text p {
+    color: #2f3441;
+    max-width: 70ch;
 }
 
 /* =====================================================
@@ -356,7 +318,8 @@ img {
     background: #ffffff;
     border: 2px solid var(--line);
     padding: 7px 10px;
-    font: 700 0.78rem Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -365,15 +328,24 @@ img {
    ===================================================== */
 
 @media (max-width: 900px) {
-    .image-strip,
-    .discussion-block,
-    .bottom-thread {
+    .image-strip {
         grid-template-columns: 1fr 1fr;
     }
 
-    .collage-panel,
-    .feature-photo {
-        grid-column: 1 / -1;
+    .look-post,
+    .look-post-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .look-post-reverse .look-media,
+    .look-post-reverse .look-text {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .look-media img {
+        aspect-ratio: 16 / 10;
+        max-height: 360px;
     }
 }
 
@@ -387,18 +359,19 @@ img {
         padding: 14px;
     }
 
-    .image-strip,
-    .discussion-block,
-    .bottom-thread {
+    .forum-header h1 {
+        font-size: 2rem;
+        line-height: 1.12;
+    }
+
+    .image-strip {
         grid-template-columns: 1fr;
     }
 
     .roulette-note,
-    .side-label {
+    .intro-label {
         position: static;
-        transform: none;
         display: inline-block;
-        width: auto;
         margin-bottom: 12px;
     }
 
@@ -406,11 +379,18 @@ img {
         height: 210px;
     }
 
-    .quote-thread {
-        padding: 18px;
+    .thread-intro,
+    .look-text {
+        padding: 20px;
     }
 
-    .post-meta {
-        flex-direction: column;
+    .look-number {
+        position: static;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    .look-text h2 {
+        max-width: none;
     }
 }
