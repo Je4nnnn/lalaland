@@ -67,7 +67,7 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 - `.roulette-note`: etiqueta con el nombre del artista ubicada sobre la franja de cuatro imagenes.
 - `.fixed-image span`: etiquetas sobre cada imagen fija.
 - `.intro-label`: etiqueta ubicada sobre el bloque `Sobre el articulo`.
-- `.vertical-note`: rotulo lateral del collage.
+- `.vertical-note`: rotulo lateral del collage con el nombre del artista.
 - `.collage-img-one`, `.collage-img-two`, `.collage-img-three`: imagenes superpuestas dentro del collage.
 - `.mini-label-one` y `.mini-label-two`: etiquetas pequenas dentro del collage.
 - `.quote-thread::after`: etiqueta del cuadro azul de frase.
