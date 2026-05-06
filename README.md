@@ -13,11 +13,10 @@ lalaland/
    |- css/
    |  `- styles.css
    `- img/
-      |- featured.jpg
-      |- news1.jpg
-      |- news2.jpg
-      |- news3.jpg
-      `- news4.jpg
+      |- featured.png
+      |- news1.jfif
+      |- news2.jfif
+      `- news4.jfif
 ```
 
 ## Contenido del sitio
@@ -26,10 +25,11 @@ La pagina presenta:
 
 - Un encabezado con el tema del foro y el titulo principal.
 - Una franja superior con 4 imagenes fijas, reemplazando la idea inicial de una ruleta.
-- Una publicacion fijada que introduce el tema con tono de foro.
+- Un bloque `Sobre el articulo` que introduce el tema con tono de foro.
 - Un bloque visual tipo collage con imagenes superpuestas y tarjetas de conversacion.
 - Una frase destacada en un cuadro azul para separar la introduccion de las entradas principales.
 - Ocho entradas principales, cada una con foto, fuente pequena bajo la imagen y descripcion en un cuadro lateral.
+- Enlaces finales a Vogue, Instagram de Taehyung, Instagram de BTS, X de BTS, YouTube y sitio oficial de BigHit.
 - Informacion sobre 8 momentos de moda de Taehyung en 2025: alta costura, craftcore, nostalgia vintage, cuero, tejido arquitectonico, lujo discreto y estilo retro.
 
 ## Tecnologias usadas
@@ -40,6 +40,7 @@ La pagina presenta:
 - Imagenes locales en `assets/img/`.
 - Posicionamiento CSS `relative` y `absolute`.
 - Uso de etiquetas `div`, `p`, `h1`, `h2`, `header`, `main`, `section`, `article`, `aside` y `footer`.
+- Tipografia configurada con Futura para textos y TT Chocolates para titulos secundarios, con fuentes de respaldo por si el navegador no las tiene instaladas.
 
 ## Uso de posicionamiento CSS
 
@@ -48,24 +49,24 @@ El proyecto usa `position: relative` para crear contextos de posicionamiento y `
 ### Relative
 
 - `.forum-header`: bloque principal del titulo del foro.
-- `.top-thread`: contexto para la etiqueta `4 imagenes fijas`.
+- `.top-thread`: contexto para la etiqueta del artista.
 - `.fixed-image`: contexto para las etiquetas de cada imagen superior.
-- `.thread-intro`: contexto para la etiqueta `Publicacion fijada`.
+- `.thread-intro`: contexto para la etiqueta `Sobre el articulo`.
 - `.collage-card` y `.collage-stage`: contexto para el bloque de imagenes superpuestas.
 - `.quote-thread`: contexto para la etiqueta `frase`.
-- `.look-media`: contexto para la etiqueta `imagen`.
+- `.look-media`: contexto para la etiqueta `BTS`.
 - `.look-text`: contexto para el numero de cada entrada.
 
 ### Absolute
 
-- `.roulette-note`: etiqueta ubicada sobre la franja de cuatro imagenes.
+- `.roulette-note`: etiqueta con el nombre del artista ubicada sobre la franja de cuatro imagenes.
 - `.fixed-image span`: etiquetas sobre cada imagen fija.
-- `.intro-label`: etiqueta ubicada sobre la publicacion fijada.
+- `.intro-label`: etiqueta ubicada sobre el bloque `Sobre el articulo`.
 - `.vertical-note`: rotulo lateral del collage.
 - `.collage-img-one`, `.collage-img-two`, `.collage-img-three`: imagenes superpuestas dentro del collage.
 - `.mini-label-one` y `.mini-label-two`: etiquetas pequenas dentro del collage.
 - `.quote-thread::after`: etiqueta del cuadro azul de frase.
-- `.look-media::before`: etiqueta ubicada sobre cada foto.
+- `.look-media::before`: etiqueta `BTS` ubicada sobre cada foto.
 - `.look-number`: numero ubicado dentro del cuadro de texto de cada entrada.
 
 ## Imagenes

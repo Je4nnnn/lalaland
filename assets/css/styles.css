@@ -14,6 +14,9 @@
     --green: #506d52;
     --cream: #fffdf8;
     --shadow: 7px 7px 0 rgba(35, 42, 56, 0.16);
+    --font-body: "Futura", "Futura PT", "Century Gothic", "Trebuchet MS", Arial, sans-serif;
+    --font-title: "TT Chocolates", "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    --font-display: Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -27,8 +30,9 @@ html {
 }
 
 body {
-    font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
-    font-size: 16px;
+    font-family: var(--font-body);
+    font-size: 17px;
+    font-weight: 700;
     line-height: 1.6;
     color: var(--ink);
     background:
@@ -44,7 +48,8 @@ img {
 }
 
 .page-shell {
-    max-width: 1120px;
+    width: min(96vw, 1420px);
+    max-width: 1420px;
     margin: 0 auto;
     padding: 28px 18px 34px;
 }
@@ -68,7 +73,7 @@ img {
 .look-number,
 .footer-link,
 .fixed-image span {
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--font-body);
 }
 
 .topic-tag {
@@ -84,7 +89,7 @@ img {
 }
 
 .forum-header h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-display);
     max-width: 900px;
     margin: 0 auto 18px;
     text-align: center;
@@ -99,7 +104,7 @@ img {
 }
 
 .forum-summary {
-    max-width: 780px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
     color: var(--muted);
@@ -139,7 +144,7 @@ img {
 .image-strip {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 24px;
 }
 
 .fixed-image {
@@ -147,11 +152,11 @@ img {
     border: 3px solid var(--line);
     background: #ffffff;
     padding: 7px;
-    min-height: 176px;
+    min-height: 206px;
 }
 
 .fixed-image img {
-    height: 152px;
+    height: 182px;
     object-fit: cover;
     filter: saturate(0.92) contrast(1.02);
 }
@@ -191,8 +196,8 @@ img {
 }
 
 .thread-intro p {
-    max-width: 88ch;
-    font-size: 1.08rem;
+    max-width: 100ch;
+    font-size: 1.12rem;
     text-align: justify;
 }
 
@@ -202,8 +207,8 @@ img {
 
 .forum-feature {
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1.08fr 1fr 1fr;
+    gap: 24px;
     align-items: stretch;
     margin-bottom: 24px;
 }
@@ -277,7 +282,7 @@ img {
     background: var(--accent-soft);
     border: 3px solid var(--line);
     padding: 9px 13px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--font-body);
     font-size: 0.82rem;
     font-weight: 800;
 }
@@ -293,7 +298,7 @@ img {
 }
 
 .feature-card {
-    padding: 24px;
+    padding: 28px;
 }
 
 .feature-card-soft {
@@ -317,14 +322,17 @@ img {
 }
 
 .feature-card h2 {
+    font-family: var(--font-title);
     margin-bottom: 14px;
     color: var(--blue);
-    font-size: 1.45rem;
+    font-size: 1.72rem;
     line-height: 1.2;
 }
 
 .feature-card p {
     text-align: justify;
+    font-size: 1.05rem;
+    line-height: 1.68;
 }
 
 .quote-thread {
@@ -345,14 +353,14 @@ img {
     color: var(--line);
     border: 3px solid var(--line);
     padding: 4px 10px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--font-body);
     font-size: 0.72rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 
 .quote-thread p {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-display);
     font-size: 1.22rem;
     font-weight: 700;
     line-height: 1.45;
@@ -370,8 +378,8 @@ img {
 
 .look-post {
     display: grid;
-    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.35fr);
-    gap: 24px;
+    grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.34fr);
+    gap: 28px;
     align-items: stretch;
     border-bottom: 3px solid var(--line);
     padding-bottom: 26px;
@@ -383,7 +391,7 @@ img {
 }
 
 .look-post-reverse {
-    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+    grid-template-columns: minmax(0, 1.34fr) minmax(320px, 0.86fr);
 }
 
 .look-post-reverse .look-media {
@@ -407,14 +415,14 @@ img {
 }
 
 .look-media::before {
-    content: "imagen";
+    content: "BTS";
     position: absolute;
     left: 18px;
     top: -14px;
     background: var(--accent-soft);
     border: 2px solid var(--line);
     padding: 4px 9px;
-    font: 700 0.72rem "Courier New", Courier, monospace;
+    font: 800 0.78rem "Futura", "Futura PT", "Century Gothic", "Trebuchet MS", Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -428,15 +436,15 @@ img {
 .look-media figcaption {
     margin-top: 9px;
     color: var(--muted);
-    font-size: 0.78rem;
-    font-weight: 500;
-    line-height: 1.35;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.45;
     text-align: justify;
 }
 
 .look-text {
     position: relative;
-    padding: 28px 32px 30px;
+    padding: 34px 40px 36px;
 }
 
 .look-number {
@@ -452,19 +460,21 @@ img {
 }
 
 .look-text h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-title);
     max-width: 92%;
     margin-bottom: 16px;
     color: var(--blue);
-    font-size: clamp(1.35rem, 2.4vw, 2rem);
+    font-size: clamp(1.6rem, 2.2vw, 2.25rem);
     line-height: 1.18;
     letter-spacing: 0;
 }
 
 .look-text p {
     color: #2f3441;
-    max-width: 70ch;
+    max-width: 82ch;
     text-align: justify;
+    font-size: 1.08rem;
+    line-height: 1.68;
 }
 
 /* =====================================================
@@ -489,9 +499,17 @@ img {
     background: #ffffff;
     border: 2px solid var(--line);
     padding: 7px 10px;
-    font-size: 0.78rem;
-    font-weight: 700;
+    color: var(--line);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-link:hover {
+    background: var(--blue);
+    color: #ffffff;
 }
 
 /* =====================================================
