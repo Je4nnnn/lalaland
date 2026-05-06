@@ -90,11 +90,11 @@ img {
 
 .forum-header h1 {
     font-family: var(--font-display);
-    max-width: 760px;
+    max-width: 980px;
     margin: 0 auto 18px;
     text-align: center;
     text-wrap: balance;
-    font-size: clamp(2rem, 4.1vw, 3.7rem);
+    font-size: clamp(2rem, 3.55vw, 3.35rem);
     font-style: italic;
     line-height: 1.08;
     letter-spacing: 0;
@@ -106,7 +106,7 @@ img {
 }
 
 .forum-summary {
-    max-width: 760px;
+    max-width: 860px;
     margin: 0 auto;
     text-align: center;
     color: var(--muted);
@@ -223,14 +223,14 @@ img {
 
 .collage-card {
     position: relative;
-    min-height: 390px;
-    padding: 18px;
+    min-height: 470px;
+    padding: 22px;
 }
 
 .vertical-note {
     position: absolute;
-    left: -42px;
-    top: 106px;
+    left: -34px;
+    top: 142px;
     width: 142px;
     transform: rotate(-90deg);
     color: var(--accent);
@@ -243,62 +243,63 @@ img {
 
 .collage-stage {
     position: relative;
-    min-height: 350px;
+    min-height: 420px;
 }
 
 .collage-img {
     position: absolute;
     border: 3px solid var(--line);
     background: #ffffff;
-    padding: 5px;
+    padding: 7px;
     object-fit: cover;
+    box-shadow: 5px 5px 0 rgba(35, 42, 56, 0.14);
 }
 
 .collage-img-one {
-    top: 18px;
-    left: 48px;
-    width: 43%;
-    height: 150px;
+    top: 12px;
+    left: 54px;
+    width: 38%;
+    height: 144px;
     z-index: 3;
 }
 
 .collage-img-two {
-    top: 42px;
-    right: 14px;
-    width: 38%;
-    height: 135px;
+    top: 24px;
+    right: 12px;
+    width: 34%;
+    height: 130px;
     z-index: 4;
 }
 
 .collage-img-three {
     left: 18px;
-    bottom: 44px;
-    width: 38%;
-    height: 138px;
+    top: 184px;
+    width: 32%;
+    height: 132px;
     z-index: 2;
 }
 
 .collage-img-four {
-    right: 36px;
-    bottom: 58px;
-    width: 34%;
-    height: 134px;
+    right: 22px;
+    top: 182px;
+    width: 32%;
+    height: 132px;
     z-index: 5;
 }
 
 .collage-img-five {
-    left: 92px;
-    bottom: 6px;
+    left: 78px;
+    bottom: 12px;
     width: 34%;
-    height: 112px;
+    height: 120px;
     z-index: 1;
 }
 
 .collage-img-six {
-    top: 156px;
-    left: 36%;
-    width: 31%;
-    height: 118px;
+    top: 124px;
+    left: 34%;
+    width: 32%;
+    height: 136px;
     z-index: 6;
 }
 
